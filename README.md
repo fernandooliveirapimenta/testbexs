@@ -1,9 +1,13 @@
-# Rota de Viagem #
+# Dependencias #
+1. Java 8 instalado.
+2. Executar bash install.sh, que se encontra na raiz do projeto. 
+Vai compilar/instalar o projeto para execução.
+ 
+# Como executar #
 
-Um turista deseja viajar pelo mundo pagando o menor preço possível independentemente do número de conexões necessárias.
-Vamos construir um programa que facilite ao nosso turista, escolher a melhor rota para sua viagem.
-
-Para isso precisamos inserir as rotas através de um arquivo de entrada.
+```shell
+$ java -jar target/viagem.jar input-routes.csv
+```
 
 ## Input Example ##
 ```csv
