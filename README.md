@@ -61,11 +61,12 @@ $ ./mvnw test
 # Design #
 1. Utilizei MVC: (Model - Route, Viagem)
  (View - Console,RouteAPI)
-  (Controller - RouteDAO,BestRouteImpl) 
-2. Solid: Separei as responsabilidades que cada classe vai desempenhar no sistema
-3. Solid: Cada metodo tem somente uma responsabilidade
-4. Solid: Criei as classes para serem facilmente testadas
-5. API: Utilizei Spring boot para expor um rest
+  (Controller - RouteDAO,BestRouteImpl).
+2. Solid: Separei as responsabilidades que cada classe vai desempenhar no sistema.
+3. Solid: Uma responsabilidade por método.
+4. Solid: Criei as classes para serem facilmente testadas.
+5. API: Utilizei Spring boot para expor um rest.
+6. Testes unitários seguindo as boas práticas do mercado.
 
 
 # API #
