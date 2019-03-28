@@ -1,3 +1,3 @@
 #!/bin/bash
-./mvnw clean install -U
+./mvnw clean install -U -DskipTests
 

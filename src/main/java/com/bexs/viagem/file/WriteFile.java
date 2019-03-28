@@ -12,7 +12,7 @@ public class WriteFile {
 
     public void writeNewLine(String val, File file) throws IOException {
         BufferedWriter buffWrite = new BufferedWriter(new FileWriter(file,true));
-        buffWrite.write(val);
+        buffWrite.write( val + "\n" );
         buffWrite.close();
     }
 }

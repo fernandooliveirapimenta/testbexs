@@ -3,8 +3,7 @@ package com.bexs.viagem.file;
 import java.io.*;
 
 /**
- * Singleton responsavel por carregar o arquivo para memoria.
- *
+ * Responsavel por carregar o arquivo para memoria.
  */
 public class LoadFile {
 
@@ -13,20 +12,11 @@ public class LoadFile {
     private LoadFile() {
     }
 
-    public static File load(String fileName) {
-        if (file == null) {
-
-            if (fileName != null && !fileName.isEmpty()) {
-
-                file = new File(fileName);
-                return file;
-
-            } else {
-                throw new RuntimeException("file not specified");
-            }
-
+    public static void load(String fileName) {
+        if (fileName != null && !fileName.isEmpty()) {
+            file = new File(fileName);
         } else {
-            return file;
+            throw new RuntimeException("file not specified");
         }
     }
 

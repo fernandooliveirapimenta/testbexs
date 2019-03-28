@@ -70,12 +70,16 @@ public class Route implements Serializable {
         if (o == null || getClass() != o.getClass()) return false;
         Route route = (Route) o;
         return from.equals(route.from) &&
-                to.equals(route.to) &&
-                val.equals(route.val);
+                to.equals(route.to);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(from, to, val);
+        return Objects.hash(from, to);
+    }
+
+    @Override
+    public String toString() {
+        return csv();
     }
 }
