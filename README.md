@@ -1,22 +1,24 @@
 # Dependencias #
-1. Java 8 instalado.
-2. Executar bash install.sh, que se encontra na raiz do projeto. 
-Vai compilar/instalar o projeto para execução.
+- Java 8.
  
 # Como executar #
-1. Entrar na raiz do projeto dar permissao de execucao pro install.sh e executalo 
-2. Executar o jar passando nome do arquivo por parametro no shell
+- Na raiz do projeto conceder permissão de execução para install.sh e executar. Esse script vai compilar
+e instalar o sistema. 
 ```shell
 $ chmod +x install.sh
 $ ./install.sh
 ```
+- Executar o jar passando nome do arquivo por parametro no shell.
+ Isso vai iniciar a Interface console(Terminal) e Api(localhost:8080/api/route)
 ```shell
 $ java -jar target/viagem.jar input-routes.csv
 ```
+
 # Testes #
 ```shell
 $ ./mvnw test
 ```
+
 # Estrutura #
 
 ```
